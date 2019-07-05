@@ -4,7 +4,8 @@
     "pages/logs/main",
     "pages/counter/main",
     "pages/page2/main",
-    "pages/testExtend/main"
+    "pages/testExtend/main",
+    "pages/examPaper/main"
   ],
   "subPackages": [
     {

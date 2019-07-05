@@ -5,7 +5,8 @@
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
     </p>
-
+    {{name}}
+      1
     <a :href="AppUrls.INDEX" class="home">去往首页</a>
   </div>
 </template>

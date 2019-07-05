@@ -1,6 +1,19 @@
-const pre = '/pages'
+const pre = "/pages";
 export const AppUrls = {
-  INDEX: pre + '/index/main',
-  COUNTER: pre + '/counter/main',
-  PACKAGE_A: '/packageA/pages/index/main',
+  INDEX: pre + "/index/main",
+  COUNTER: pre + "/counter/main",
+  PACKAGE_A: "/packageA/pages/index/main",
+  EXAMPAPER: pre + "/examPaper/main"
+};
+
+export class Model {
+  username: string;
+  height: number;
+  weight: number;
+  props
+  constructor(username : string) {
+    this.username = username
+  }
+
 }
+

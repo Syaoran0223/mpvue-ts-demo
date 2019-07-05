@@ -2,10 +2,13 @@ import { Vue, Component } from "vue-property-decorator";
 import { AppUrls } from "@/utils/consts.ts";
 import Card from "@/components/card.vue"; // mpvue目前只支持的单文件组件
 import CompB from "@/components/compb.vue"; // mpvue目前只支持的单文件组件
-import { Model } from "@/utils/model/base";
 
 const debug = require("debug")("log:Index");
-const log = console.log.bind(console);
+
+interface Person {
+  firstName: string,
+  lastName: string,
+}
 
 // 必须使用装饰器的方式来指定component
 @Component({
@@ -16,22 +19,20 @@ const log = console.log.bind(console);
 })
 class Index extends Vue {
   AppUrls = AppUrls;
-  ver: number = 1424;
-  name: string = "";
-  model: Model;
+
 
   onShow() { // 小程序 hook
-    debug("onShow1");
-    const name: string = "name";
-    this.name = name;
-    this.model = new Model("1231111111");
-    log("model", this.model.add({}));
+    debug("onShow");
 
   }
 
   mounted() { // vue hook
     debug("mounted");
   }
+
+  methods: {
+
+  };
 }
 
 export default Index;
