@@ -9,6 +9,7 @@
         <a :href="AppUrls.COUNTER" class="home">去往vuex</a>
         <a :href="AppUrls.PACKAGE_A" class="home">分包A</a>
         <a href="/pages/testExtend/main" class="home">测试继承</a>
+        <a :href="AppUrls.TODO" class="home">todo</a>
     </div>
 </template>
 <!--必须指定为ts-->
